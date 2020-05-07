@@ -35,6 +35,7 @@ cd teste-git
 ```
 npm install
 ```
+5. Adicione suas informações da conta em **cypress.json**
 
 4. Rode o projeto
 ```
