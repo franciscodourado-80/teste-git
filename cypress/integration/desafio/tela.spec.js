@@ -1,5 +1,6 @@
 context('Teste de tela', () => {
   describe('Login', () => {
+    // Validar Login inválido
     it('Falha no Login', () => {
       const username = Cypress.env('username');
       const password = 'senhaincorreta';
@@ -14,6 +15,7 @@ context('Teste de tela', () => {
         .should('to.have.length', 1);
     });
 
+    // Validar Login válido
     it('Sucesso no login', () => {
       const username = Cypress.env('username');
       const password = Cypress.env('password');
@@ -29,6 +31,7 @@ context('Teste de tela', () => {
 
   let branchName = '';
   describe('Branch', () => {
+    // Validar criação de branch
     it('Criar uma branch', () => {
       const username = Cypress.env('username');
       const password = Cypress.env('password');
@@ -58,6 +61,7 @@ context('Teste de tela', () => {
   });
 
   describe('Listar branchs', () => {
+    // Validar listagem de branch
     it('Branchs', () => {
       const username = Cypress.env('username');
       const repository = Cypress.env('repository');
